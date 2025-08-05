@@ -1,5 +1,5 @@
 [build]
-  # Build command - install all dependencies including devDependencies
+  # Build command
   command = "npm ci --include=dev && npm run build"
   
   # Publish directory
@@ -11,8 +11,6 @@
 [build.environment]
   # Node.js version
   NODE_VERSION = "18"
-  # Disable secrets scanning for this project
-  SECRETS_SCAN_ENABLED = "false"
 
 # Redirects for SPA routing
 [[redirects]]
@@ -39,12 +37,9 @@
 # Environment variables (set these in Netlify dashboard)
 [context.production.environment]
   NODE_ENV = "production"
-  VITE_STRIPE_PUBLISHABLE_KEY = "pk_live_51RSOHIDBaLXa22vf94s5xTyNkOXLHSmzDLpctf3c0KDHm3KYz0K3BHFkVdyzd9hWKHGiePksuWXp1GUnIzuLRjFJ00MW6I9qsj"
 
 [context.deploy-preview.environment]
   NODE_ENV = "preview"
-  VITE_STRIPE_PUBLISHABLE_KEY = "pk_live_51RSOHIDBaLXa22vf94s5xTyNkOXLHSmzDLpctf3c0KDHm3KYz0K3BHFkVdyzd9hWKHGiePksuWXp1GUnIzuLRjFJ00MW6I9qsj"
 
 [context.branch-deploy.environment]
-  NODE_ENV = "development"
-  VITE_STRIPE_PUBLISHABLE_KEY = "pk_live_51RSOHIDBaLXa22vf94s5xTyNkOXLHSmzDLpctf3c0KDHm3KYz0K3BHFkVdyzd9hWKHGiePksuWXp1GUnIzuLRjFJ00MW6I9qsj"
+  NODE_ENV = "development"   SECRETS_SCAN_ENABLED = "false"

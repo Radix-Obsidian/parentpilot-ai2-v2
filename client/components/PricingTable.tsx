@@ -41,7 +41,7 @@ export const PricingTable: React.FC<PricingTableProps> = ({ className = '' }) =>
         {/* Stripe Pricing Table */}
         <stripe-pricing-table 
           pricing-table-id="prctbl_1RsYEgDBaLXa22vfMNkonnit"
-          publishable-key="pk_live_51RSOHIDBaLXa22vf94s5xTyNkOXLHSmzDLpctf3c0KDHm3KYz0K3BHFkVdyzd9hWKHGiePksuWXp1GUnIzuLRjFJ00MW6I9qsj"
+          publishable-key={import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY || "pk_live_51RSOHIDBaLXa22vf94s5xTyNkOXLHSmzDLpctf3c0KDHm3KYz0K3BHFkVdyzd9hWKHGiePksuWXp1GUnIzuLRjFJ00MW6I9qsj"}
         />
         
         {/* Additional Information */}
