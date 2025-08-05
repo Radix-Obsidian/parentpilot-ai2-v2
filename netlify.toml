@@ -1,6 +1,6 @@
 [build]
   # Build command
-  command = "npm run build"
+  command = "npm ci --include=dev && npm run build"
   
   # Publish directory
   publish = "dist/spa"
