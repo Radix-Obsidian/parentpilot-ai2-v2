@@ -134,15 +134,13 @@ parentpilot-ai2/
 
 ### Stripe Integration
 - **Pricing Table**: Embedded Stripe pricing component
-- **Subscription Management**: Multiple tiers (Starter, Pro, Enterprise)
+- **Subscription Management**: Two tiers (Starter, Pro)
 - **Webhook Handling**: Real-time payment event processing
 - **Cost Tracking**: AI usage monitoring and billing
 
 ### Pricing Tiers
-- **Starter**: $9.99/month - Basic AI assistance
-- **Pro**: $19.99/month - Advanced insights and recommendations
-- **Enterprise**: $49.99/month - Full feature access
-
+- **Starter**: $19.99/month - 50 AI interactions per month
+- **Pro**: $49.99/month - Unlimited AI interactions
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
